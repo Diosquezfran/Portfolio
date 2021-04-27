@@ -47,6 +47,9 @@
   --primary-gray: #ccd1d9;
   --primary-light-gray: #f4f4f4;
   --primary-dark-gray: #666666;
+  --primary-black: #000000;
+  --primary-green: green;
+  --primary-transparent-black: rgba(0,0,0.7);
 }
 
 /***** navbar *****/
@@ -88,7 +91,7 @@ nav ul li {
   }
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
@@ -100,10 +103,10 @@ nav ul li {
 
 .header-wraper {
   position: relative;
-  background: url(./coffee-computers.jpg) no-repeat;
+  background: url(../src/images/coffee-computers.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -215,7 +218,7 @@ nav ul li {
 }
 
 .services h1 {
-  color: var(--primary-dark);
+  color: var(--primary-orange);
   text-transform: uppercase;
 }
 
@@ -243,6 +246,7 @@ nav ul li {
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
 
 .services .box:hover {
@@ -342,4 +346,299 @@ nav ul li {
     direction: ltr;
     width: 100%;
   }
+}
+
+/******** PORTFOLIO **********/
+
+.portfolio-wrapper {
+  background: var(--primary-light-gray);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
+.portfolio-image {
+  width: 15rem;
+  height: 9.25rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+}
+
+/*********** MEDIA *************/
+
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 15rem;
+  height: 9.2rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+/********* OVERFLOW BOX ************/
+
+.portfolio-image-popupbox {
+  width: 70%;
+  display: block;
+  margin: auto;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  cursor: pointer;
+  color: var(--primary-red);
+}
+
+/********** MEDIA ************/
+
+@media(max-width:768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height:500px) {
+  .popupbox-wrapper {
+    height:100%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media(max-height:280px) {
+  .popupbox-wrapper {
+    height:90%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 30%;
+  }
+}
+
+/********** TESTIMONIALS ***************/
+
+.testimonials {
+  background-image: url(https://ak.picdn.net/shutterstock/videos/12568382/thumb/6.jpg);
+  background-size: cover;
+  background-color: var(--primary-black);
+  text-align: center;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.testimonials h1 {
+  color: var(--primary-orange);
+  padding: 3rem o;
+  text-transform: uppercase;
+}
+
+.testimonials-content {
+  text-align: center;
+  max-width: 53.125rem;
+  margin: 0 auto 2rem auto;
+  background: var(--primary-transparent-black);
+}
+
+.myCarousel {
+  color: var(--primary-white);
+  background: transparent;
+  margin-top: -6%;
+  width: 54%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 17.875rem;
+
+}
+
+.myCarousel h3 {
+  color: var(--primary-orange);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.myCarousel p {
+  color: var(--primary-gray);
+}
+
+.carousel .slide img {
+  width: 10rem !important;
+  border-radius: 50%;
+}
+
+.carousel .slide {
+  background: transparent !important;
+  height: 100% !important;
+  padding-top: 2rem;
+}
+
+.carousel-root {
+  margin: auto;
+  margin-top: 3% !important;
+}
+
+
+/********* CONTACT ME ************/
+
+.contacts {
+  background: var(--primary-black);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p{
+  color: var(--primary-light-gray);
+  font-size: 1.2rem;
+}
+
+/******** INPUTS *************/
+
+.contacts input, .contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-gray);
+  border-radius: 0%;
+  color: var(--primary-orange);
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0%;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-gray);
+}
+
+.contacts textarea {
+  height: 10rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line{
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.success-message {
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+/******** MEDIA *************/
+
+@media(max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+  
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
+
+}
+
+/********* FOOTER ***************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-gray);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-gray);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }

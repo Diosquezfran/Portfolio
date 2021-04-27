@@ -6,6 +6,9 @@ import Header from './components/Header';
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import Education from "./components/Education";
+import Portfolio from "./components/Portfolio";
+import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -37,6 +40,9 @@ function App() {
       <AboutMe/>
       <Services/>
       <Education/>
+      <Portfolio/>
+      <ContactMe/>
+      <Footer/>
     </>
   );
 }
