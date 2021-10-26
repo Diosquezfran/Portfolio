@@ -16,7 +16,7 @@ const Education = () => {
                 </div>
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"> </div>
-                        <div className="timeline-content" id="js">
+                        <div className="timeline-content" >
                             <h3>2020-2021</h3>
                             <p>Coderhouse: Javascript</p>
                         </div>
@@ -26,6 +26,13 @@ const Education = () => {
                         <div className="timeline-content">
                             <h3>2020-2021</h3>
                             <p>Coderhouse: React Js</p>
+                        </div>
+                </div>
+                <div className="timeline-block timeline-block-left">
+                    <div className="marker"> </div>
+                        <div className="timeline-content">
+                            <h3>2021-2021</h3>
+                            <p>Soy Henry: Fullstack</p>
                         </div>
                 </div>
             </div>

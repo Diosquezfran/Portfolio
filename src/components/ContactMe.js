@@ -63,8 +63,8 @@ const ContactMe = () => {
                             />
                             <div className="line"></div>
                         </div>
-                        <spam className="error-message">
-                        </spam>
+                        <span className="error-message">
+                        </span>
                         <div className="text-center">
                             <input
                             type="text"

@@ -12,9 +12,11 @@ const AboutMe = () => {
                 <div className="col-lg-6 col-xm-12">
                     <h1 className="about-heading">About me</h1>
                     <p>
-                    Hi there! my name is Franco Diosquez, I’m from Santiago del Estero, Argentina and I’m a Front End Developer
-                    in constant learning. Passionate for study and curious to know technologies that allow me to grow as a professional and as an apprentice.
-                    I love challenges and fixing problems. Feel free to contact me.
+                    Hi there! my name is Franco Diosquez, I’m from Argentina and I’m a Fullstack Developer.
+                    Since I was a child I was passionate about philosophy, logic, and technology. While looking for new challenges I found in programming
+                    a place where all these passions converge.
+                    The possibility of being able to create, through code and innovative ideas,
+                    solutions capable of changing the world is something that fascinates and motivates me. Feel free to contact me.
                     </p>
                 </div>
             </div>

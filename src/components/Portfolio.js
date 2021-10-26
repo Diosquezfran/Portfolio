@@ -12,7 +12,7 @@ const Portfolio = () => {
         const content = (   
             <>
                 <img className="portfolio-image-popupbox" src="https://res.cloudinary.com/druj3xeao/image/upload/v1620061894/portfolio%20img/Captura_de_pantalla_87_fnjkff.png" alt="crud project"/>
-                <p>e-Commerce made with React, React Context, React Router Dom, React Share, React Toastify, Bootstrap and Firebase
+                <p>e-Commerce made with React, React Context, Bootstrap and Firebase
                 </p>
                 <b>GitHub:</b>
                 <a className="hyper-link" onClick={() => window.open("https://github.com/Diosquezfran/react")}>
@@ -26,7 +26,7 @@ const Portfolio = () => {
             config: {
             titleBar: {
             enable: true,
-            text: "e-Commerce made with React Js and Firebase",
+            text: "e-Commerce",
             },
             fadeIn: true,
             fadeInSpeed: 500
@@ -34,7 +34,35 @@ const Portfolio = () => {
         });
     };
 
+   // PF
+   const openPopUpJs = () => {
+    const content = (   
+        <>
+            <img className="portfolio-image-popupbox" src="https://res.cloudinary.com/druj3xeao/image/upload/v1635287560/portfolio%20img/Captura_de_pantalla_130_qnjxoa.png" alt="js project"/>
+            <p>Final Project at Soy Henry Bootcamp. Technologies used: React, Redux,
+                Typescript, NodeJs, Express, Sequelize, PostgreSQL
 
+            </p>
+            <b>GitHub:</b>
+            <a className="hyper-link" onClick={() => window.open("https://github.com/2Davit/16Bit-GameStore")}>
+            https://github.com/2Davit/16Bit-GameStore
+            </a>
+        </>
+    )
+    
+    PopupboxManager.open({content});
+    PopupboxManager.update({
+        ...content,
+        config: {
+        titleBar: {
+        enable: true,
+        text: "E-commerce",
+    },
+        fadeIn: true,
+        fadeInSpeed: 500
+    },
+    });
+};
 
    // react crud
 
@@ -64,40 +92,12 @@ const Portfolio = () => {
         });
     };
 
-    
-   //js ecomerce link
-    const openPopUpJs = () => {
-        const content = (   
-            <>
-                <img className="portfolio-image-popupbox" src="https://res.cloudinary.com/druj3xeao/image/upload/v1619501351/portfolio%20img/Captura_de_pantalla_85_tdpa16.png" alt="js project"/>
-                <p>Functional e-Commerce made with Vanilla Javascript .
-                </p>
-                <b>GitHub:</b>
-                <a className="hyper-link" onClick={() => window.open("https://github.com/Diosquezfran/Javascript-commerce")}>
-                https://github.com/Diosquezfran/Javascript-commerce
-                </a>
-            </>
-        )
-        
-        PopupboxManager.open({content});
-        PopupboxManager.update({
-            ...content,
-            config: {
-            titleBar: {
-            enable: true,
-            text: "E-commerce",
-        },
-            fadeIn: true,
-            fadeInSpeed: 500
-        },
-        });
-    };
-        //react tasks
+        //PI
         const openPopUpTodo = () => {
             const content = (   
                 <div className="id-portfolio-image-popupbox">
-                    <img className="portfolio-image-popupbox" src="https://res.cloudinary.com/druj3xeao/image/upload/v1619501246/portfolio%20img/Captura_de_pantalla_84_jodybi.png" alt="todo project"/>
-                    <p>App made with React to add tasks using class components.
+                    <img className="portfolio-image-popupbox" src="https://res.cloudinary.com/druj3xeao/image/upload/v1635288787/portfolio%20img/Captura_de_pantalla_2021-10-26_195223_sfeiaf.png" alt="todo project"/>
+                    <p>App made with React, Redux, Express, Sequelize and PostgreSQL
                     </p>
                     <b>GitHub:</b>
                     <a className="hyper-link" onClick={() => window.open("https://github.com/Diosquezfran/tasks")}>
@@ -111,7 +111,7 @@ const Portfolio = () => {
             config: {
             titleBar: {
             enable: true,
-            text: "Task Adder",
+            text: "Poke api",
            },
             fadeIn: true,
             fadeInSpeed: 500
@@ -132,21 +132,22 @@ const Portfolio = () => {
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
+                    <div className="portfolio-image-box" onClick={openPopUpJs}>
+                        <img src="https://res.cloudinary.com/druj3xeao/image/upload/v1635287560/portfolio%20img/Captura_de_pantalla_130_qnjxoa.png" alt="js project" className="portfolio-image"/>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
+                    </div>
                      <div className="portfolio-image-box " onClick={openPopUpCrud}>
                         <img src="https://res.cloudinary.com/druj3xeao/image/upload/v1619500274/portfolio%20img/Captura_de_pantalla_82_qfmlbd.png" alt="crud react" className="portfolio-image"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
                     <div className="portfolio-image-box" onClick={openPopUpTodo}>
-                        <img src="https://res.cloudinary.com/druj3xeao/image/upload/v1619501246/portfolio%20img/Captura_de_pantalla_84_jodybi.png" alt="todo react" className="portfolio-image"/>
+                        <img src="https://res.cloudinary.com/druj3xeao/image/upload/v1635288787/portfolio%20img/Captura_de_pantalla_2021-10-26_195223_sfeiaf.png" alt="todo react" className="portfolio-image"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
-                    <div className="portfolio-image-box" onClick={openPopUpJs}>
-                        <img src="https://res.cloudinary.com/druj3xeao/image/upload/v1619501351/portfolio%20img/Captura_de_pantalla_85_tdpa16.png" alt="js project" className="portfolio-image"/>
-                        <div className="overflow"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
-                    </div>
+                    
                 </div>
             </div>
             <PopupboxContainer content={PopupboxManager} />

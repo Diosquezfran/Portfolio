@@ -103,7 +103,8 @@ nav ul li {
 
 .header-wraper {
   position: relative;
-  background: url(../src/images/coffee-computers.jpg) no-repeat;
+  /* background: url(../src/images/coffee-computers2.jpg) no-repeat; */
+  background: url(./images/coffe.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -300,6 +301,7 @@ nav ul li {
 
 .timeline-block-right {
   float: right;
+  direction: ltr;
 }
 
 .timeline-block-left {
@@ -321,6 +323,7 @@ nav ul li {
   width: 95%;
   color: var(--primary-dark-gray);
   direction: ltr;
+  margin-left: 10em;
 }
 
 .timeline-content h3{
@@ -328,7 +331,11 @@ nav ul li {
   color: var(--primary-red);
   font-weight: 900;
 }
-
+@media(max-width: 975px) {
+  .timeline-content {
+  margin-left: 2em;
+  }
+}
 @media(max-width: 768px) {
   .education .container {
     padding-left: 0%;
@@ -346,8 +353,15 @@ nav ul li {
     direction: ltr;
     width: 100%;
   }
+  .timeline-content {
+  margin-left: 2em;
+  }
 }
-
+@media(max-width: 975px) {
+  .timeline-content {
+  margin-left: 5em;
+  }
+}
 /******** PORTFOLIO **********/
 
 .portfolio-wrapper {

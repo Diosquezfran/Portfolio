@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faReact, faJsSquare, faCss3, faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faServer, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import { faReact, faJsSquare, faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import { SiTypescript, SiPostgresql, SiFirebase, SiSequelize, SiExpress} from 'react-icons/si';
 
 const Services = () => {
     return (
@@ -9,6 +9,14 @@ const Services = () => {
             <h1 className="py-5">My skills</h1>
                 <div className="container">
                     <div className="row">
+                    <div className="col-lg-3 col-md-12 col-sm-12">
+                            <div className="box">
+                                <div className="circle">
+                                   <FontAwesomeIcon className="icon" icon={faJsSquare} size="2x"/>
+                                </div>
+                                <h3>Javascript</h3>
+                            </div>
+                        </div>
                         <div className="col-lg-3 col-md-12 col-sm-12">
                             <div className="box">
                                 <div className="circle">
@@ -20,23 +28,48 @@ const Services = () => {
                         <div className="col-lg-3 col-md-12 col-sm-12">
                             <div className="box">
                                 <div className="circle">
-                                   <FontAwesomeIcon className="icon" icon={faJsSquare} size="2x"/>
+                                   <SiTypescript className="icon" />
                                 </div>
-                                <h3>Javascript</h3>
+                                <h3>Typescript</h3>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-12 col-sm-12">
                             <div className="box">
                                 <div className="circle">
-                                   <FontAwesomeIcon className="icon" icon={faFileCode} size="2x"/>
+                                   <FontAwesomeIcon className="icon" icon={faNodeJs} size="2x"/>
                                 </div>
-                                <h3>HTML - CSS</h3>
+                                <h3>Node Js</h3>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-12 col-sm-12">
                             <div className="box">
                                 <div className="circle">
-                                   <FontAwesomeIcon className="icon" icon={faServer} size="2x"/>
+                                    <SiExpress className="icon"/>
+                                </div>
+                                <h3>Express</h3>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-12 col-sm-12">
+                            <div className="box">
+                                <div className="circle">
+                                   <SiPostgresql className="icon"/>
+                                </div>
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-12 col-sm-12">
+                            <div className="box">
+                                <div className="circle">
+                                    <SiSequelize className="icon"/>
+                                </div>
+                                <h3>Sequelize</h3>
+                            </div>
+                        </div>
+                    
+                        <div className="col-lg-3 col-md-12 col-sm-12">
+                            <div className="box">
+                                <div className="circle">
+                                   <SiFirebase className="icon"/>
                                 </div>
                                 <h3>Firebase</h3>
                             </div>
