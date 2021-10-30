@@ -16,7 +16,7 @@ const Portfolio = () => {
                 </p>
                 <b>GitHub:</b>
                 <a className="hyper-link" onClick={() => window.open("https://github.com/Diosquezfran/react")}>
-                https://github.com/Diosquezfran/react
+                Check the repository!
                 </a>
             </>
         )
@@ -45,7 +45,7 @@ const Portfolio = () => {
             </p>
             <b>GitHub:</b>
             <a className="hyper-link" onClick={() => window.open("https://github.com/2Davit/16Bit-GameStore")}>
-            https://github.com/2Davit/16Bit-GameStore
+            Check the repository!
             </a>
         </>
     )
@@ -74,7 +74,7 @@ const Portfolio = () => {
                 </p>
                 <b>GitHub:</b>
                 <a className="hyper-link" onClick={() => window.open("https://github.com/Diosquezfran/React-CRUD")}>
-                https://github.com/Diosquezfran/React-CRUD
+                Check the repository!
                 </a>
             </>
         )
@@ -101,7 +101,7 @@ const Portfolio = () => {
                     </p>
                     <b>GitHub:</b>
                     <a className="hyper-link" onClick={() => window.open("https://github.com/Diosquezfran/Poke-api")}>
-                    https://github.com/Diosquezfran/Poke-api
+                    Check the repository!
                     </a>
                 </div>
             )
