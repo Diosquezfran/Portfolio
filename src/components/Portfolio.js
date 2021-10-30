@@ -100,8 +100,8 @@ const Portfolio = () => {
                     <p>App made with React, Redux, Express, Sequelize and PostgreSQL
                     </p>
                     <b>GitHub:</b>
-                    <a className="hyper-link" onClick={() => window.open("https://github.com/Diosquezfran/tasks")}>
-                    https://github.com/Diosquezfran/tasks
+                    <a className="hyper-link" onClick={() => window.open("https://github.com/Diosquezfran/Poke-api")}>
+                    https://github.com/Diosquezfran/Poke-api
                     </a>
                 </div>
             )
